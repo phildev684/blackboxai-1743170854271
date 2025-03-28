@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events Calendar | Green Guardians</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- FullCalendar CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css">
+</head>
+<body class="bg-green-50">
+  <!-- Navbar -->
+  <nav class="bg-green-800 text-white p-4 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold">Green Guardians</a>
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-green-200">Home</a>
+        <a href="about.html" class="hover:text-green-200">About</a>
+        <a href="resources.html" class="hover:text-green-200">Resources</a>
+        <a href="volunteer.html" class="hover:text-green-200">Get Involved</a>
+        <a href="events.html" class="hover:text-green-200 font-bold">Events</a>
+      </div>
+      <button class="md:hidden mobile-menu-button">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Events Hero -->
+  <section class="py-20 px-4 bg-green-700 text-white text-center">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Upcoming Events</h1>
+    <p class="text-xl mb-8">Join our community activities and make a difference</p>
+  </section>
+
+  <!-- Calendar Section -->
+  <section class="py-16 px-4 container mx-auto">
+    <div class="bg-white p-6 rounded-lg shadow-md mb-12">
+      <div id="calendar" class="max-w-4xl mx-auto"></div>
+    </div>
+
+    <!-- Featured Events -->
+    <h2 class="text-3xl font-bold text-center mb-12 text-green-800">Featured Events</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Event 1 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <div class="h-48 bg-green-200 flex items-center justify-center">
+          <i class="fas fa-leaf text-6xl text-green-600"></i>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center text-green-600 mb-2">
+            <i class="far fa-calendar-alt mr-2"></i>
+            <span>June 15, 2023 • 9:00 AM</span>
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-green-800">Community Tree Planting</h3>
+          <p class="text-gray-600 mb-4">Help us plant 100 native trees in the city park.</p>
+          <a href="#" class="inline-block px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-500 transition">Register</a>
+        </div>
+      </div>
+
+      <!-- Event 2 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <div class="h-48 bg-green-200 flex items-center justify-center">
+          <i class="fas fa-recycle text-6xl text-green-600"></i>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center text-green-600 mb-2">
+            <i class="far fa-calendar-alt mr-2"></i>
+            <span>June 22, 2023 • 6:00 PM</span>
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-green-800">Zero Waste Workshop</h3>
+          <p class="text-gray-600 mb-4">Learn practical tips for reducing household waste.</p>
+          <a href="#" class="inline-block px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-500 transition">Register</a>
+        </div>
+      </div>
+
+      <!-- Event 3 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <div class="h-48 bg-green-200 flex items-center justify-center">
+          <i class="fas fa-water text-6xl text-green-600"></i>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center text-green-600 mb-2">
+            <i class="far fa-calendar-alt mr-2"></i>
+            <span>July 5, 2023 • 10:00 AM</span>
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-green-800">River Cleanup Day</h3>
+          <p class="text-gray-600 mb-4">Annual cleanup of the Green Valley River.</p>
+          <a href="#" class="inline-block px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-500 transition">Register</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Event Categories -->
+  <section class="py-16 px-4 bg-green-100">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12 text-green-800">Event Categories</h2>
+      <div class="grid md:grid-cols-4 gap-6">
+        <a href="#" class="bg-white p-6 rounded-lg shadow text-center hover:shadow-lg transition">
+          <div class="w-16 h-16 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center">
+            <i class="fas fa-tree text-2xl text-green-600"></i>
+          </div>
+          <h3 class="font-bold">Conservation</h3>
+        </a>
+        <a href="#" class="bg-white p-6 rounded-lg shadow text-center hover:shadow-lg transition">
+          <div class="w-16 h-16 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center">
+            <i class="fas fa-graduation-cap text-2xl text-green-600"></i>
+          </div>
+          <h3 class="font-bold">Workshops</h3>
+        </a>
+        <a href="#" class="bg-white p-6 rounded-lg shadow text-center hover:shadow-lg transition">
+          <div class="w-16 h-16 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center">
+            <i class="fas fa-hands-helping text-2xl text-green-600"></i>
+          </div>
+          <h3 class="font-bold">Volunteer</h3>
+        </a>
+        <a href="#" class="bg-white p-6 rounded-lg shadow text-center hover:shadow-lg transition">
+          <div class="w-16 h-16 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center">
+            <i class="fas fa-users text-2xl text-green-600"></i>
+          </div>
+          <h3 class="font-bold">Community</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-900 text-white p-8">
+    <div class="container mx-auto text-center">
+      <p>© 2023 Green Guardians. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- FullCalendar JS -->
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const calendarEl = document.getElementById('calendar');
+      const calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        headerToolbar: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'dayGridMonth,timeGridWeek,listWeek'
+        },
+        events: [
+          {
+            title: 'Tree Planting',
+            start: '2023-06-15',
+            end: '2023-06-15',
+            color: '#38a169'
+          },
+          {
+            title: 'Zero Waste Workshop',
+            start: '2023-06-22T18:00:00',
+            end: '2023-06-22T20:00:00',
+            color: '#38a169'
+          },
+          {
+            title: 'River Cleanup',
+            start: '2023-07-05',
+            end: '2023-07-05',
+            color: '#38a169'
+          }
+        ]
+      });
+      calendar.render();
+    });
+  </script>
+</body>
+</html>
