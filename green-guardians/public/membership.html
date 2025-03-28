@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership | Green Guardians</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-green-50">
+  <!-- Navbar -->
+  <nav class="bg-green-800 text-white p-4 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold">Green Guardians</a>
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-green-200">Home</a>
+        <a href="about.html" class="hover:text-green-200">About</a>
+        <a href="resources.html" class="hover:text-green-200">Resources</a>
+        <a href="volunteer.html" class="hover:text-green-200">Get Involved</a>
+        <a href="events.html" class="hover:text-green-200">Events</a>
+        <a href="blog.html" class="hover:text-green-200">Blog</a>
+        <a href="membership.html" class="hover:text-green-200 font-bold">Membership</a>
+      </div>
+      <button class="md:hidden mobile-menu-button">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Membership Hero -->
+  <section class="py-20 px-4 bg-green-700 text-white text-center">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Join Our Community</h1>
+    <p class="text-xl mb-8">Become a Green Guardian and amplify your impact</p>
+  </section>
+
+  <!-- Membership Tiers -->
+  <section class="py-16 px-4 container mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12 text-green-800">Membership Options</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Free Tier -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden border-2 border-green-200">
+        <div class="bg-green-100 p-6 text-center">
+          <h3 class="text-2xl font-bold text-green-800">Eco Explorer</h3>
+          <div class="my-4">
+            <span class="text-4xl font-bold">Free</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-green-500 mr-2"></i>
+              <span>Access to basic resources</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-green-500 mr-2"></i>
+              <span>Monthly newsletter</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-green-500 mr-2"></i>
+              <span>Event invitations</span>
+            </li>
+          </ul>
+          <a href="#signup" class="block w-full py-3 bg-green-100 text-green-800 text-center rounded-lg hover:bg-green-200 transition">Sign Up</a>
+        </div>
+      </div>
+
+      <!-- Premium Tier -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-green-400 transform scale-105 z-10">
+        <div class="bg-green-600 p-6 text-center text-white">
+          <h3 class="text-2xl font-bold">Green Leader</h3>
+          <div class="my-4">
+            <span class="text-4xl font-bold">$5</span>
+            <span class="text-gray-200">/month</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-green-500 mr-2"></i>
+              <span>All Free tier benefits</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-green-500 mr-2"></i>
+              <span>Exclusive webinars</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-green-500 mr-2"></i>
+              <span>Early event registration</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-green-500 mr-2"></i>
+              <span>Discussion forum access</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-green-500 mr-2"></i>
+              <span>10% store discount</span>
+            </li>
+          </ul>
+          <a href="#signup" class="block w-full py-3 bg-green-600 text-white text-center rounded-lg hover:bg-green-500 transition">Get Premium</a>
+        </div>
+      </div>
+
+      <!-- Organization Tier -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden border-2 border-green-300">
+        <div class="bg-green-200 p-6 text-center">
+          <h3 class="text-2xl font-bold text-green-800">School/Group</h3>
+          <div class="my-4">
+            <span class="text-4xl font-bold">$25</span>
+            <span class="text-gray-600">/month</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-green-500 mr-2"></i>
+              <span>All Premium benefits</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-green-500 mr-2"></i>
+              <span>Up to 20 members</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-green-500 mr-2"></i>
+              <span>Custom workshops</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-green-500 mr-2"></i>
+              <span>Project funding support</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-green-500 mr-2"></i>
+              <span>Organization profile</span>
+            </li>
+          </ul>
+          <a href="#signup" class="block w-full py-3 bg-green-300 text-green-900 text-center rounded-lg hover:bg-green-400 transition">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signup/Login Section -->
+  <section id="signup" class="py-16 px-4 bg-green-100">
+    <div class="container mx-auto max-w-4xl">
+      <div class="bg-white p-8 rounded-lg shadow-md">
+        <div class="flex flex-col md:flex-row gap-8">
+          <!-- Signup Form -->
+          <div class="md:w-1/2">
+            <h2 class="text-2xl font-bold mb-6 text-green-800">Create Account</h2>
+            <form>
+              <div class="mb-4">
+                <label class="block text-gray-700 mb-2">Full Name</label>
+                <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+              </div>
+              <div class="mb-4">
+                <label class="block text-gray-700 mb-2">Email</label>
+                <input type="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+              </div>
+              <div class="mb-4">
+                <label class="block text-gray-700 mb-2">Password</label>
+                <input type="password" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+              </div>
+              <div class="mb-6">
+                <label class="flex items-center">
+                  <input type="checkbox" class="form-checkbox text-green-600">
+                  <span class="ml-2 text-gray-700">I agree to the terms and conditions</span>
+                </label>
+              </div>
+              <button type="submit" class="w-full py-3 bg-green-600 text-white rounded-lg hover:bg-green-500 transition">Sign Up</button>
+            </form>
+          </div>
+
+          <!-- Login Form -->
+          <div class="md:w-1/2">
+            <h2 class="text-2xl font-bold mb-6 text-green-800">Existing Members</h2>
+            <form>
+              <div class="mb-4">
+                <label class="block text-gray-700 mb-2">Email</label>
+                <input type="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+              </div>
+              <div class="mb-6">
+                <label class="block text-gray-700 mb-2">Password</label>
+                <input type="password" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+              </div>
+              <button type="submit" class="w-full py-3 bg-green-600 text-white rounded-lg hover:bg-green-500 transition">Login</button>
+              <div class="mt-4 text-center">
+                <a href="#" class="text-green-600 hover:text-green-800">Forgot password?</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="py-16 px-4 container mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12 text-green-800">Membership Benefits</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="text-center">
+        <div class="w-20 h-20 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center">
+          <i class="fas fa-hands-helping text-3xl text-green-600"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-2 text-green-800">Community</h3>
+        <p class="text-gray-600">Connect with like-minded youth activists worldwide.</p>
+      </div>
+      <div class="text-center">
+        <div class="w-20 h-20 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center">
+          <i class="fas fa-tools text-3xl text-green-600"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-2 text-green-800">Resources</h3>
+        <p class="text-gray-600">Access exclusive guides, templates, and toolkits.</p>
+      </div>
+      <div class="text-center">
+        <div class="w-20 h-20 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center">
+          <i class="fas fa-bullhorn text-3xl text-green-600"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-2 text-green-800">Amplify</h3>
+        <p class="text-gray-600">Get featured on our platforms and grow your impact.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-900 text-white p-8">
+    <div class="container mx-auto text-center">
+      <p>© 2023 Green Guardians. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
